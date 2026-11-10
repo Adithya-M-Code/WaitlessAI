@@ -1,0 +1,118 @@
+{
+  "weights": {
+    "accuracy": 35.0,
+    "uncertainty": 15.0,
+    "robustness": 15.0,
+    "stability": 10.0,
+    "latency": 10.0,
+    "explainability": 10.0,
+    "maintainability": 5.0
+  },
+  "rankings": [
+    {
+      "model_id": "m3_xgboost",
+      "total_score": 94.36,
+      "breakdown": {
+        "accuracy": 34.88,
+        "uncertainty": 14.59,
+        "robustness": 13.5,
+        "stability": 8.89,
+        "latency": 10.0,
+        "explainability": 8.5,
+        "maintainability": 4.0
+      }
+    },
+    {
+      "model_id": "m2_random_forest",
+      "total_score": 87.32,
+      "breakdown": {
+        "accuracy": 34.71,
+        "uncertainty": 13.64,
+        "robustness": 12.75,
+        "stability": 8.56,
+        "latency": 6.67,
+        "explainability": 7.5,
+        "maintainability": 3.5
+      }
+    },
+    {
+      "model_id": "m5_st_gnn_no_graph",
+      "total_score": 86.28,
+      "breakdown": {
+        "accuracy": 34.64,
+        "uncertainty": 15.0,
+        "robustness": 11.7,
+        "stability": 8.9,
+        "latency": 10.0,
+        "explainability": 3.8,
+        "maintainability": 2.25
+      }
+    },
+    {
+      "model_id": "m4_gru",
+      "total_score": 83.68,
+      "breakdown": {
+        "accuracy": 35.0,
+        "uncertainty": 14.45,
+        "robustness": 11.25,
+        "stability": 9.81,
+        "latency": 6.67,
+        "explainability": 4.0,
+        "maintainability": 2.5
+      }
+    },
+    {
+      "model_id": "m5_st_gnn",
+      "total_score": 81.82,
+      "breakdown": {
+        "accuracy": 34.42,
+        "uncertainty": 13.23,
+        "robustness": 12.0,
+        "stability": 10.0,
+        "latency": 6.67,
+        "explainability": 3.5,
+        "maintainability": 2.0
+      }
+    },
+    {
+      "model_id": "m1_ridge_logistic",
+      "total_score": 69.15,
+      "breakdown": {
+        "accuracy": 20.93,
+        "uncertainty": 7.64,
+        "robustness": 9.75,
+        "stability": 6.84,
+        "latency": 10.0,
+        "explainability": 9.5,
+        "maintainability": 4.5
+      }
+    },
+    {
+      "model_id": "historical_mean_baseline",
+      "total_score": 34.13,
+      "breakdown": {
+        "accuracy": 11.07,
+        "uncertainty": 0.0,
+        "robustness": 7.5,
+        "stability": 1.81,
+        "latency": 0.0,
+        "explainability": 9.0,
+        "maintainability": 4.75
+      }
+    },
+    {
+      "model_id": "persistence_baseline",
+      "total_score": 31.82,
+      "breakdown": {
+        "accuracy": 0.0,
+        "uncertainty": 0.82,
+        "robustness": 6.0,
+        "stability": 0.0,
+        "latency": 10.0,
+        "explainability": 10.0,
+        "maintainability": 5.0
+      }
+    }
+  ],
+  "top_model": "m3_xgboost"
+}

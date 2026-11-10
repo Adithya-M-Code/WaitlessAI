@@ -1,0 +1,16 @@
+{
+  "model_id": "m4_gru",
+  "family": "deep_sequence",
+  "tasks": [
+    "delay",
+    "crowding"
+  ],
+  "hyperparameters": {
+    "hidden_dim": 32,
+    "epochs": 3,
+    "lr": 0.003
+  },
+  "train_time_seconds": 16.67,
+  "n_parameters": 13860,
+  "data_version": "v1"
+}

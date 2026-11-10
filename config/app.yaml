@@ -1,0 +1,32 @@
+app:
+  name: "Waitless AI"
+  version: "2.0.0"
+  tagline: "Know your bus before it arrives."
+  scope: "MTC Chennai"
+
+data:
+  mode: "synthetic"
+  live_stale_seconds: 180
+  collect_interval_seconds: 30
+  chennai_bbox:
+    min_lat: 12.7
+    max_lat: 13.4
+    min_lon: 79.9
+    max_lon: 80.4
+  max_speed_kmh: 120.0
+  transfer_distance_m: 200.0
+
+features:
+  sequence_length: 8
+  delay_clip_min: -5.0
+  delay_clip_max: 60.0
+  crowding_thresholds:
+    low_max: 20
+    medium_max: 40
+
+serving:
+  host: "0.0.0.0"
+  port: 8000
+  workers: 1
+  timeout_seconds: 30
+

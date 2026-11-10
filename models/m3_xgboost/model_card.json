@@ -1,0 +1,18 @@
+{
+  "model_id": "m3_xgboost",
+  "family": "boosting",
+  "tasks": [
+    "delay",
+    "crowding"
+  ],
+  "hyperparameters": {
+    "n_estimators": 120,
+    "max_depth": 6,
+    "lr": 0.05,
+    "seed": 42
+  },
+  "train_time_seconds": 1.13,
+  "n_parameters": 180000,
+  "data_version": "v1",
+  "created_at": "2026-11-08T20:00:00Z"
+}

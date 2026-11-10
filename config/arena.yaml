@@ -1,0 +1,54 @@
+models:
+  baselines:
+    - id: "persistence_baseline"
+      family: "baseline"
+      name: "Persistence (Carry-Forward)"
+      tasks: ["delay", "crowding"]
+    - id: "historical_mean_baseline"
+      family: "baseline"
+      name: "Route×Stop×Hour Historical Mean/Mode"
+      tasks: ["delay", "crowding"]
+  candidates:
+    - id: "m1_ridge_logistic"
+      family: "linear"
+      name: "Ridge Regression / Multinomial Logistic"
+      tasks: ["delay", "crowding"]
+    - id: "m2_random_forest"
+      family: "bagging"
+      name: "Random Forest"
+      tasks: ["delay", "crowding"]
+    - id: "m3_xgboost"
+      family: "boosting"
+      name: "XGBoost"
+      tasks: ["delay", "crowding"]
+    - id: "m4_gru"
+      family: "deep_sequence"
+      name: "Gated Recurrent Unit (K=8)"
+      tasks: ["delay", "crowding"]
+    - id: "m5_st_gnn"
+      family: "graph"
+      name: "Spatio-Temporal GNN (GraphSAGE + GRU)"
+      tasks: ["delay", "crowding"]
+
+evaluation:
+  cv_folds: 5
+  bootstrap_resamples: 1000
+  conformal_coverage: 0.80
+  calibration_method: "isotonic"
+  confidence_level: 0.95
+
+scorecard_weights:
+  accuracy: 35
+  uncertainty: 15
+  robustness: 15
+  stability: 10
+  latency: 10
+  explainability: 10
+  maintainability: 5
+
+budgets:
+  max_train_minutes_per_model: 30
+  optuna_trials_classical: 20
+  optuna_trials_deep: 10
+  seeds: 3
+

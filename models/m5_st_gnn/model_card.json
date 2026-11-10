@@ -1,0 +1,16 @@
+{
+  "model_id": "m5_st_gnn",
+  "family": "graph",
+  "tasks": [
+    "delay",
+    "crowding"
+  ],
+  "hyperparameters": {
+    "hidden_dim": 32,
+    "epochs": 3,
+    "use_graph": true
+  },
+  "train_time_seconds": 11.33,
+  "n_parameters": 9924,
+  "data_version": "v1"
+}

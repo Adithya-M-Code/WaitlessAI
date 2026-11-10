@@ -1,0 +1,27 @@
+{
+  "feature_columns": [
+    "hour",
+    "hour_sin",
+    "hour_cos",
+    "day_of_week",
+    "is_weekend",
+    "is_peak",
+    "is_holiday",
+    "stop_sequence",
+    "trip_progress_pct",
+    "scheduled_headway",
+    "previous_delay",
+    "delay_upstream_2",
+    "speed_estimate_kmh",
+    "dwell_estimate_s",
+    "route_rolling_mean_delay_15m",
+    "route_rolling_mean_delay_30m",
+    "headway_gap_minutes",
+    "bunching_indicator",
+    "rain_flag",
+    "rain_intensity_mm",
+    "previous_crowding_idx"
+  ],
+  "n_features": 21,
+  "description": "Waitless AI v2 shared feature set"
+}

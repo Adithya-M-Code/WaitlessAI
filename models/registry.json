@@ -1,0 +1,24 @@
+{
+  "delay": {
+    "champion": "m3_xgboost",
+    "challengers": [
+      "m2_random_forest",
+      "m5_st_gnn_no_graph",
+      "m4_gru",
+      "m5_st_gnn",
+      "m1_ridge_logistic"
+    ]
+  },
+  "crowding": {
+    "champion": "m3_xgboost",
+    "challengers": [
+      "m2_random_forest",
+      "m5_st_gnn_no_graph",
+      "m4_gru",
+      "m5_st_gnn",
+      "m1_ridge_logistic"
+    ]
+  },
+  "data_source": "synthetic",
+  "approved_by_human": true
+}
